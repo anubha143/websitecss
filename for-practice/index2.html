@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-auto-rows: 100px; */
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1em;
+      }
+      .wrapper div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+      .box1 {
+        grid-column: 1/3;
+        grid-row: 1/4;
+      }
+      .box2 {
+        grid-row: 1/4;
+      }
+      .box3 {
+        grid-column: 2/4;
+        grid-row: 5;
+      }
+      .new {
+        /* grid-column: 5/6; */
+        grid-column: 1/2;
+        grid-row: 6;
+        /* grid-row: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur
+        <span>1</span>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore
+        minima,
+        <span>2</span>
+      </div>
+      <div class="new">
+        Lorem ipsum dolor sit amet consectetur.
+        <span>3</span>
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        repellat, iure consequatur soluta vel distinctio sunt sapiente nemo
+        temporibus ducimus praesentium eaque sed dolore. Accusantium totam hic
+        quibusdam voluptas in quaerat repellat labore, deserunt deleniti
+        exercitationem est fugiat ullam ab.
+        <span>4</span>
+      </div>
+      <div class="box3">
+        box3
+        <span>(5)</span>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur.
+        <span>6</span>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur.
+        <span>7</span>
+      </div>
+    </div>
+  </body>
+</html>

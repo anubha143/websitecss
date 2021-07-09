@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .container-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .container-1 div {
+        border: 1px #ccc solid;
+        padding: 10px;
+        width: 24%;
+        text-align: center;
+      } */
+      /* .box-1 {
+        flex: 3;
+      }
+      .box-2 {
+        flex: 1;
+      }
+      .box-3 {
+        flex: 1;
+      } */
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /* grid-column-gap: 1em;
+        grid-row-gap: 1em; */
+        grid-gap: 1em;
+      }
+      .wrapper div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae debitis
+        distinctio aperiam ratione atque totam beatae temporibus harum ipsa,
+        sunt velit odit nisi quos dignissimos veritatis doloribus porro. Magnam
+        laborum dignissimos fugiat culpa non temporibus harum unde
+        exercitationem ducimus. Ipsam accusantium illum incidunt rerum autem
+        voluptates maxime, non labore quisquam libero odit illo laboriosam atque
+        ex ad consectetur quis. Cupiditate, necessitatibus nam facere quod quo
+        debitis quibusdam magnam, earum ab est voluptatibus dolor nulla
+        praesentium eos accusamus voluptas totam. Incidunt.
+      </div>
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quas quae
+        in itaque recusandae nulla. Ullam, tempora. Veritatis temporibus alias
+        voluptate amet harum tenetur reiciendis quod labore? Aspernatur, quo ut.
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae debitis
+        distinctio aperiam ratione atque totam beatae temporibus harum ipsa,
+        sunt velit odit nisi quos dignissimos veritatis doloribus porro. Magnam
+        laborum dignissimos fugiat culpa non temporibus harum unde
+        exercitationem ducimus. Ipsam accusantium illum incidunt rerum autem
+        voluptates maxime, non labore quisquam libero odit illo laboriosam atque
+        ex ad consectetur quis. Cupiditate, necessitatibus nam facere quod quo
+        debitis quibusdam magnam, earum ab est voluptatibus dolor nulla
+        praesentium eos accusamus voluptas totam. Incidunt.
+      </div>
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quas quae
+        in itaque recusandae nulla. Ullam, tempora. Veritatis temporibus alias
+        voluptate amet harum tenetur reiciendis quod labore? Aspernatur, quo ut.
+      </div>
+    </div>
+
+    <!-- <div class="container-1">
+      <div class="box-1">
+        <h3>Box One</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          totam?
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>Box Two</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          totam?
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>Box Three</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          totam?
+        </p>
+      </div>
+      <div class="box-4">
+        <h3>Box four</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          totam?
+        </p>
+      </div>
+    </div> -->
+  </body>
+</html>
